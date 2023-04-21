@@ -435,7 +435,11 @@ La API devolverá el mensaje:
 	}
 ]
 ```
+	
+	
+## :computer: UML Modelo:
 
+![UML](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/UML_mensajeria.drawio.png)
 
 
 ## :computer: Diagrama Entidad Relación:
