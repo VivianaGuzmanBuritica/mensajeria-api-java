@@ -451,7 +451,7 @@ La API devolverá el mensaje:
 
 ### Empleado:
 
-![Empleado](https://github.com/VivianaGuzmanBuritica/reservas-hotel-api-java/blob/main/clase_reserva.drawio.png)
+![Empleado](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/mensajeria_clase_empleado.drawio.png)
 
 ### Envio:
 
