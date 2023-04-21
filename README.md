@@ -14,9 +14,9 @@ Las principales dependencias utilizadas son : 👩‍💻
 Adicionalmente esta API se encuentra documentada con Swagger y podrá probar la funcionalidad de  cada una de las clases en los Endpoints disponibles en el siguiente link :eyes: :link:[Swagger documentación reservas](https://mensajeria-api-java-production.up.railway.app/swagger-ui/index.html#/)
 ## :computer: Endpoints:
 
-### Endpoint de creación de cliente :raising_hand:
+## Endpoint de creación de cliente :raising_hand:
 
-#### POST: /api/v1/clientes
+### POST: /api/v1/clientes
 
 🙍 **Crear** un nuevo cliente en la base de datos con la información proporcionada en el cuerpo de la solicitud.
 
@@ -56,7 +56,7 @@ La API devolverá el nuevo cliente creado en formato JSON:
 }
 ```
 
-#### GET: /api/v1/clientes/{cedula}
+### GET: /api/v1/clientes/{cedula}
 
  🕵 Este endpoint permite  **buscar** un cliente por cédula, es una funcionalidad que permite a los usuarios obtener los datos de un cliente en particular utilizando su número de identificación.
 
@@ -81,7 +81,7 @@ La API devolverá el cliente encontrado en formato JSON:
 }
 ```
 
-#### PUT: /api/v1/clientes/{cedula}
+### PUT: /api/v1/clientes/{cedula}
 
 ♻ Este endpoint permite  **actualizar** los datos de un cliente es una funcionalidad que permite a los usuarios modificar la información de un cliente existente en la base de datos.
 
@@ -122,7 +122,7 @@ La API devolverá el cliente actualizado en formato JSON:
 }
 ```
 
-#### DELETE: /api/v1/clientes/{cedula}
+### DELETE: /api/v1/clientes/{cedula}
 
 ❌ Este endpoint permite  **eliminar** un cliente es una funcionalidad que permite a los usuarios eliminar los datos de un cliente existente en la base de datos. Tenga en cuenta que solo se podrá eliminar si este cliente no tiene asociado un envio.
 
@@ -142,7 +142,7 @@ La API devolverá el mensaje:
 
 ### Endpoint de creación de empleado👨‍🔧
 
-#### POST: /api/v1/empleados
+### POST: /api/v1/empleados
 
 👨‍🔧 **Crear** un nuevo empleado en la base de datos con la información proporcionada en el cuerpo de la solicitud.
 
@@ -193,7 +193,7 @@ La API devolverá el nuevo empleado creado en formato JSON:
 }
 ```
 
-#### GET: /api/v1/empleados/{cedula}
+### GET: /api/v1/empleados/{cedula}
 
  🕵 Este endpoint permite  **buscar** un empleado por cédula, es una funcionalidad que permite a los usuarios obtener los datos de un empleado en particular utilizando su número de identificación.
 
@@ -221,7 +221,7 @@ La API devolverá el empleado encontrado en formato JSON:
 }
 ```
 
-#### PUT: /api/v1/empleado/{cedula}
+### PUT: /api/v1/empleado/{cedula}
 
 ♻ Este endpoint permite  **actualizar** los datos de un empleado es una funcionalidad que permite a los usuarios modificar la información de un empleado existente en la base de datos.
 
@@ -271,7 +271,7 @@ La API devolverá el nuevo empleado creado en formato JSON:
 }
 ```
 
-#### DELETE: /api/v1/empleados/{cedula}
+### DELETE: /api/v1/empleados/{cedula}
 
 ❌ Este endpoint permite  **eliminar** un empleado es una funcionalidad que permite a los usuarios eliminar los datos de un empleado existente en la base de datos. Tenga en cuenta que solo se podrá eliminar si este cliente no tiene asociado un envio.
 
@@ -288,9 +288,9 @@ La API devolverá el mensaje:
 	"El empleado con cedula 12345 fue eliminado con exito"
 ```
 
-### Endpoint de creación de envio :package:
+## Endpoint de creación de envio :package:
 
-#### POST: /api/v1/envio
+### POST: /api/v1/envio
 
 👩‍💻 Este endpoint que **crea** un envío es una funcionalidad que permite a los usuarios crear un nuevo envío en el sistema. Cuando un usuario realiza una solicitud al endpoint de creación de envío, el servidor procesa la solicitud y crea un nuevo registro de envío en la base de datos.
 
@@ -332,7 +332,7 @@ La API devolverá el nuevo envio creado en formato JSON:
 }
 ```
 
-#### GET: /api/v1/envio/{num-guia}
+### GET: /api/v1/envio/{num-guia}
 
  🕵 Este endpoint para **buscar** un envío por número de guía es una funcionalidad que permite a los usuarios buscar información específica sobre un envío registrado en el sistema utilizando su número de guía único. Cuando un usuario realiza una solicitud al endpoint de búsqueda de envío por número de guía, el servidor procesa la solicitud y devuelve la información correspondiente del envío en la base de datos.
 
@@ -361,7 +361,7 @@ La API devolverá el envio encontrado en formato JSON:
 }
 ```
 
-#### PUT: /api/v1/envio/estado
+### PUT: /api/v1/envio/estado
 
 ♻ Este endpoint para actualizar el estado de un envío es una funcionalidad que permite a los usuarios cambiar el estado actual de un envío registrado en el sistema. Cuando un usuario realiza una solicitud al endpoint de actualización de estado de envío, el servidor procesa la solicitud y actualiza el registro de envío correspondiente en la base de datos.
 
@@ -392,7 +392,7 @@ La API devolverá el nuevo estado del envio creado en formato JSON:
 }
 ```
 
-#### GET: /api/v1/envio/estado/{estado}
+### GET: /api/v1/envio/estado/{estado}
 
 📜 Este endpoint para filtrar los envíos por estado es una funcionalidad que permite a los usuarios buscar información sobre los envíos en función de su estado actual. Cuando un usuario realiza una solicitud al endpoint de filtrado de envíos por estado, el servidor procesa la solicitud y devuelve los registros de envío correspondientes en la base de datos que cumplen con los criterios de búsqueda.
 
