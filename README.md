@@ -455,7 +455,7 @@ La API devolverá el mensaje:
 
 ### Envio:
 
-![Envio](https://github.com/VivianaGuzmanBuritica/reservas-hotel-api-java/blob/main/clase_habitacion.drawio.png)
+![Envio](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/mensajeria_clase_envio.drawio.png)
 
 
 ## :dizzy:  CI-Integración Continua:
