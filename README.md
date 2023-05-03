@@ -469,6 +469,8 @@ Utilicé GitHub Actions para la integración continua. GitHub Actions es una her
 ## :arrow_double_up:  CD-Despliegue Continuo:
 
 Utilicé  Railway para el despliegue continuo. La plataforma de alojamiento de aplicaciones proporciona una funcionalidad de despliegue continuo que permite implementar automáticamente cualquier cambio en el código en un entorno de producción. Al utilizar Git como fuente, Railway desencadena una construcción y despliegue automáticos en el entorno de producción en cada cambio en el repositorio sin la necesidad de intervención manual. 
+	
+	
  
  
  
