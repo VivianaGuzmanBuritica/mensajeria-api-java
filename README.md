@@ -435,22 +435,31 @@ La API devolverá el mensaje:
 	}
 ]
 ```
+	
+	
+## :computer: UML Modelo:
+
+![UML](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/UML_mensajeria.drawio.png)
 
 
+## :computer: Diagrama Entidad Relación:
+
+![MER](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/MER.png)
 
 ## :computer: Diagramas de clases:
 
+
 ### Cliente:
 
-![Cliente](https://github.com/VivianaGuzmanBuritica/reservas-hotel-api-java/blob/main/clase_cliente.drawio.png)
+![Cliente](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/mensajeria_clase_cliente.drawio.png)
 
-### Reserva:
+### Empleado:
 
-![Cliente](https://github.com/VivianaGuzmanBuritica/reservas-hotel-api-java/blob/main/clase_reserva.drawio.png)
+![Empleado](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/mensajeria_clase_empleado.drawio.png)
 
-### Habitacion:
+### Envio:
 
-![Cliente](https://github.com/VivianaGuzmanBuritica/reservas-hotel-api-java/blob/main/clase_habitacion.drawio.png)
+![Envio](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/mensajeria_clase_envio.drawio.png)
 
 
 ## :dizzy:  CI-Integración Continua:
@@ -460,6 +469,8 @@ Utilicé GitHub Actions para la integración continua. GitHub Actions es una her
 ## :arrow_double_up:  CD-Despliegue Continuo:
 
 Utilicé  Railway para el despliegue continuo. La plataforma de alojamiento de aplicaciones proporciona una funcionalidad de despliegue continuo que permite implementar automáticamente cualquier cambio en el código en un entorno de producción. Al utilizar Git como fuente, Railway desencadena una construcción y despliegue automáticos en el entorno de producción en cada cambio en el repositorio sin la necesidad de intervención manual. 
+	
+	
  
  
  
