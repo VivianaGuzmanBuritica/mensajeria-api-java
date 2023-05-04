@@ -39,8 +39,6 @@ public class BasicAuthConfiguration {
         return http
                 .httpBasic()
                 .and().authorizeHttpRequests()
-                .antMatchers("https://mensajeria-api-java-production.up.railway.app/swagger-ui/index.html#/").hasAuthority("READ")
-                .antMatchers("https://mensajeria-api-java-production.up.railway.app/swagger-ui/index.html#/cliente-controller").hasAuthority("READ")
                 .antMatchers(HttpMethod.GET).hasAuthority("READ")
                 .antMatchers(HttpMethod.POST).hasAuthority("WRITE")
                 .antMatchers(HttpMethod.PATCH).hasAuthority("WRITE")
