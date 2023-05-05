@@ -51,20 +51,7 @@ se utiliza este patrón de comportamiento para el manejo del cambio de estado de
 
 ![MER](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/MER.png)
 
-## :computer: Diagramas de clases:
 
-
-### Cliente:
-
-![Cliente](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/mensajeria_clase_cliente.drawio.png)
-
-### Empleado:
-
-![Empleado](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/mensajeria_clase_empleado.drawio.png)
-
-### Envio:
-
-![Envio](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/mensajeria_clase_envio.drawio.png)
 
 ## :computer: Endpoints:
 
