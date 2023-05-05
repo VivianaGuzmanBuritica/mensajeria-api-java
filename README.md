@@ -29,6 +29,10 @@ Todas las acciones permitidas:
 - userName: admin
 - password: admin123
 
+## :computer: UML Modelo:
+
+![UML](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/UML_mensajeria.drawio.png)
+
 ## :space_invader: Patrones de diseño:
 
 ### DTO (Data Transfer Object):
@@ -37,18 +41,7 @@ Se utiliza este patrón para transferencia de datos entre diferentes capas de la
 ### State:
 se utiliza este patrón de comportamiento para el manejo del cambio de estado de un envío cambiando así su comportamiento en función de estos estados sin cambiar su estructura, además se articula con la implementación de los tipos de dato especial Enum para definir los valores de los estados ("RECIBIDO", "EN_RUTA", "ENTREGADO") para que de manera que sean fijo en toda la aplicación.
 
-## :dizzy:  CI-Integración Continua:
-
-Utilicé GitHub Actions :octocat: para la integración continua. GitHub Actions es una herramienta de automatización que me permite ejecutar flujos de trabajo automatizados en respuesta a eventos específicos, como la creación de una solicitud de extracción o un nuevo commit. Con esta herramienta, puedo automatizar la ejecución de pruebas, el empaquetado de mi aplicación y la implementación en diferentes entornos, todo dentro del mismo flujo de trabajo. Esto me permite ahorrar tiempo y reducir errores al asegurarme de que mi aplicación se construya correctamente en cada cambio que hago en el código. Además, GitHub Actions es fácil de configurar y personalizar para satisfacer las necesidades específicas de mi proyecto.
-
-## :arrow_double_up:  CD-Despliegue Continuo:
-
-Utilicé  Railway :bullettrain_side: para el despliegue continuo. La plataforma de alojamiento de aplicaciones proporciona una funcionalidad de despliegue continuo que permite implementar automáticamente cualquier cambio en el código en un entorno de producción. Al utilizar Git como fuente, Railway desencadena una construcción y despliegue automáticos en el entorno de producción en cada cambio en el repositorio sin la necesidad de intervención manual. 
-
 	
-## :computer: UML Modelo:
-
-![UML](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/UML_mensajeria.drawio.png)
 
 ## :computer: Diagrama flujo creación de un envio:
 
@@ -497,15 +490,6 @@ La API devolverá el mensaje:
 ]
 ```
 	
-	
-## :computer: UML Modelo:
-
-![UML](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/UML_mensajeria.drawio.png)
-
-
-## :computer: Diagrama Entidad Relación:
-
-![MER](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/MER.png)
 
 ## :computer: Diagramas de clases:
 
@@ -523,6 +507,13 @@ La API devolverá el mensaje:
 ![Envio](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/mensajeria_clase_envio.drawio.png)
 
 
+## :dizzy:  CI-Integración Continua:
+
+Utilicé GitHub Actions :octocat: para la integración continua. GitHub Actions es una herramienta de automatización que me permite ejecutar flujos de trabajo automatizados en respuesta a eventos específicos, como la creación de una solicitud de extracción o un nuevo commit. Con esta herramienta, puedo automatizar la ejecución de pruebas, el empaquetado de mi aplicación y la implementación en diferentes entornos, todo dentro del mismo flujo de trabajo. Esto me permite ahorrar tiempo y reducir errores al asegurarme de que mi aplicación se construya correctamente en cada cambio que hago en el código. Además, GitHub Actions es fácil de configurar y personalizar para satisfacer las necesidades específicas de mi proyecto.
+
+## :arrow_double_up:  CD-Despliegue Continuo:
+
+Utilicé  Railway :bullettrain_side: para el despliegue continuo. La plataforma de alojamiento de aplicaciones proporciona una funcionalidad de despliegue continuo que permite implementar automáticamente cualquier cambio en el código en un entorno de producción. Al utilizar Git como fuente, Railway desencadena una construcción y despliegue automáticos en el entorno de producción en cada cambio en el repositorio sin la necesidad de intervención manual. 
 
 	
 	
