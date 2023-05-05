@@ -1,17 +1,78 @@
 # API REST Mensajería de Paquetes :package::post_office:
 
-<div align= "rigth">Esta API REST de Mensajeria de paquetes es una aplicación Spring Boot que  permite a los usuarios enviar y hacer seguimiento de los paquetes a través de una interfaz web. La API utiliza el protocolo HTTP para permitir que los usuarios interactúen con el sistema a través de una serie de endpoints de API 🔗 definidos.
+Esta aplicación fue diseñada en el marco del proyecto integrador del Bootcamp de backend de Makaia como resultado de la implementación de los conocimientos adquiridos en la formación académica.
 
-El proyecto esta construido con la versión de '2.7.10' de Spring Boot, un gestor de dependecias con  Gradle-Groovy compatible con Java 11:coffee:, con un motor de base de datos en MySQL y persistencia de datos co JPA e Hibernate. Además de contar con Integración Continua con Github Actions y despliegue con Railway.
+Esta API REST de Mensajeria de paquetes es una aplicación Spring Boot que  permite a los usuarios enviar y hacer seguimiento de los paquetes a través de una interfaz web. La API utiliza el protocolo HTTP para permitir que los usuarios interactúen con el sistema a través de una serie URL definidos para los microservicios de Cliente, Empleado y Envio. Para diseñar estas solución se emplearon las siguientes tecnologías:
+
+- Java 11:coffee:
+- Spring Boot :leaves:Versión de 2.7.10
+- Gestor de dependecias con  Gradle-Groovy  :elephant:
+- Motor de base de datos en MySQL :dolphin: y persistencia de datos co JPA e Hibernate. 
+- Integración Continua con Github Actions :octocat: 
+- Despliegue con Railway :bullettrain_side:.
 
 Las principales dependencias utilizadas son : 👩‍💻
 
 - Spring Data JPA (Persiste bases de datos SQL utilizando Java Persistence API mediante Spring Data y Hibernate.)
 - Spring Web (Construye aplicaciones web, incluyendo RESTful, utilizando Spring MVC. Utiliza Apache Tomcat como contenedor integrado predeterminado.)
+- Spring Security (Autenticación básica)
 - JUnit (Testeo de pruebas unitarias)
+- Swagger (Documentación de la API)
+
+Adicionalmente esta API se encuentra documentada con Swagger y podrá probar la funcionalidad de  cada una de las clases en los Endpoints disponibles en el siguiente link: 
+
+#### :eyes: :link:[ Link a documentación en Swagger - Mensajeria de paquetes](https://mensajeria-api-java-production.up.railway.app/swagger-ui/index.html#/)
+
+No olvide tener a mano los permisos de acceso :closed_lock_with_key: de la aplicación:
+
+Todas las acciones permitidas:
+- userName: admin
+- password: admin123
+
+## :space_invader: Patrones de diseño:
+
+### DTO (Data Transfer Object):
+Se utiliza este patrón para transferencia de datos entre diferentes capas de la aplicación, y para mejorar la seguridad de la aplicación al controlar qué datos se transfieren.
+
+### State:
+se utiliza este patrón de comportamiento para el manejo del cambio de estado de un envío cambiando así su comportamiento en función de estos estados sin cambiar su estructura, además se articula con la implementación de los tipos de dato especial Enum para definir los valores de los estados ("RECIBIDO", "EN_RUTA", "ENTREGADO") para que de manera que sean fijo en toda la aplicación.
+
+## :dizzy:  CI-Integración Continua:
+
+Utilicé GitHub Actions :octocat: para la integración continua. GitHub Actions es una herramienta de automatización que me permite ejecutar flujos de trabajo automatizados en respuesta a eventos específicos, como la creación de una solicitud de extracción o un nuevo commit. Con esta herramienta, puedo automatizar la ejecución de pruebas, el empaquetado de mi aplicación y la implementación en diferentes entornos, todo dentro del mismo flujo de trabajo. Esto me permite ahorrar tiempo y reducir errores al asegurarme de que mi aplicación se construya correctamente en cada cambio que hago en el código. Además, GitHub Actions es fácil de configurar y personalizar para satisfacer las necesidades específicas de mi proyecto.
+
+## :arrow_double_up:  CD-Despliegue Continuo:
+
+Utilicé  Railway :bullettrain_side: para el despliegue continuo. La plataforma de alojamiento de aplicaciones proporciona una funcionalidad de despliegue continuo que permite implementar automáticamente cualquier cambio en el código en un entorno de producción. Al utilizar Git como fuente, Railway desencadena una construcción y despliegue automáticos en el entorno de producción en cada cambio en el repositorio sin la necesidad de intervención manual. 
+
+	
+## :computer: UML Modelo:
+
+![UML](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/UML_mensajeria.drawio.png)
+
+## :computer: Diagrama flujo creación de un envio:
+
+![UML](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/diagrama%20flujo%20crear%20envio.drawio.png)
+
+## :computer: Diagrama Entidad Relación:
+
+![MER](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/MER.png)
+
+## :computer: Diagramas de clases:
 
 
-Adicionalmente esta API se encuentra documentada con Swagger y podrá probar la funcionalidad de  cada una de las clases en los Endpoints disponibles en el siguiente link :eyes: :link:[Swagger documentación reservas](https://mensajeria-api-java-production.up.railway.app/swagger-ui/index.html#/)
+### Cliente:
+
+![Cliente](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/mensajeria_clase_cliente.drawio.png)
+
+### Empleado:
+
+![Empleado](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/mensajeria_clase_empleado.drawio.png)
+
+### Envio:
+
+![Envio](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/mensajeria_clase_envio.drawio.png)
+
 ## :computer: Endpoints:
 
 ## Endpoint de creación de cliente :raising_hand:
@@ -462,13 +523,7 @@ La API devolverá el mensaje:
 ![Envio](https://github.com/VivianaGuzmanBuritica/mensajeria-api-java/blob/main/mensajeria_clase_envio.drawio.png)
 
 
-## :dizzy:  CI-Integración Continua:
 
-Utilicé GitHub Actions para la integración continua. GitHub Actions es una herramienta de automatización que me permite ejecutar flujos de trabajo automatizados en respuesta a eventos específicos, como la creación de una solicitud de extracción o un nuevo commit. Con esta herramienta, puedo automatizar la ejecución de pruebas, el empaquetado de mi aplicación y la implementación en diferentes entornos, todo dentro del mismo flujo de trabajo. Esto me permite ahorrar tiempo y reducir errores al asegurarme de que mi aplicación se construya correctamente en cada cambio que hago en el código. Además, GitHub Actions es fácil de configurar y personalizar para satisfacer las necesidades específicas de mi proyecto.
-
-## :arrow_double_up:  CD-Despliegue Continuo:
-
-Utilicé  Railway para el despliegue continuo. La plataforma de alojamiento de aplicaciones proporciona una funcionalidad de despliegue continuo que permite implementar automáticamente cualquier cambio en el código en un entorno de producción. Al utilizar Git como fuente, Railway desencadena una construcción y despliegue automáticos en el entorno de producción en cada cambio en el repositorio sin la necesidad de intervención manual. 
 	
 	
  
