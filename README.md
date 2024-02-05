@@ -4,7 +4,7 @@ Esta aplicación fue diseñada en el marco del proyecto integrador del Bootcamp 
 
 Esta API REST de Mensajeria de paquetes es una aplicación Spring Boot que  permite a los usuarios enviar y hacer seguimiento de los paquetes a través de una interfaz web. La API utiliza el protocolo HTTP para permitir que los usuarios interactúen con el sistema a través de una serie URL definidos para los microservicios de Cliente, Empleado y Envio. Para diseñar estas solución se emplearon las siguientes tecnologías
 
-- Java 11:coffee:
+- Java 11 :coffee:
 - Spring Boot :leaves:Versión de 2.7.10
 - Gestor de dependecias con  Gradle-Groovy  :elephant:
 - Motor de base de datos en MySQL :dolphin: y persistencia de datos co JPA e Hibernate. 
